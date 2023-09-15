@@ -38,8 +38,8 @@ function createStar(req,res){
     const Schema = joi.object({
         id: joi.number().integer().min(1).required(),
         name: joi.string().required(),
-        type: joi.string().required,
-        distancia: joi.string().required,
+        type: joi.string().required(),
+        distancia: joi.string().required(),
         mass: joi.string().required(),
         radius: joi.string().required(),
         temperature: joi.string().required(),
