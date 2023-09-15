@@ -61,10 +61,12 @@ function createStar(req,res){
             error: 'Failed to create a new star'
         });
     
+
+    
+    } else{
     const newStar = req.body;
     stars.push(newStar);
-    res.status(201).json({newStar})
-    
+    res.status(201).json({newStar})        
     }
 
 
